@@ -64,7 +64,7 @@ app.post('/submit', upload.single('cv'), async (req, res) => {
     // Send the email with the form data and the CV attachment
     const mailOptions = {
       from: email, // Use the contact email from the form
-      to: 'shitansu.gochhayat@bookingjini.co', // The recipient email address
+      to: 'booking@smhives.com', // The recipient email address
       subject: `Application from ${first} ${last} - ${job_role}`,
       html: emailBody,
       attachments: cvFile ? [cvFile] : []
